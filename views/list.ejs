@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body >
+    <h1>
+        To Do for the DAY
+     
+    </h1>
+    <h2>
+        <%= thisday %>
+    </h2>
+    <div class="main">
+
+    <div class="main1">
+    <ul>
+        
+
+        
+
+        <% for(var i=0; i<newItems.length; i++){  %>
+
+            <li><%= newItems[i] %></li>
+
+        <% } %>
+
+
+    </ul>
+</div>
+    <div class="main2">
+    <form  action="/" method="post">
+        <input  type="text" name="todo" id="" placeholder="Add Task" autofocus >
+        <button type="submit" >Add Task</button>
+    </form>
+    </div>
+
+</div>
+    
+   
+      
+</body>
+</html>
